@@ -77,8 +77,8 @@ describe("Categories component", () => {
 
 /*   it("should call fetch in useEffect", () => {
     expect(global.fetch).toHaveBeenCalledWith(`${fileName}.json`);
-  });
-}); */
+  }); */
+});
 
 describe("Product component", () => {
   it("render with props", () => {
