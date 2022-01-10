@@ -1,0 +1,59 @@
+.App-header {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 50px;
+  border: 1px solid;
+  border-color: #69696967 transparent;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-header__logo {
+  max-width: 200px;
+}
+
+.App-header__links {
+  display: flex;
+  flex-grow: 0.25;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.links__item {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.links__item:last-of-type span:last-of-type {
+  margin-left: 5px;
+}
+
+.arrow-down,
+.arrow-up {
+  position: relative;
+}
+
+.arrow-down::after,
+.arrow-up::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: calc(50% - 3px);
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
+.arrow-down::after {
+  border-top: 6px solid #000;
+}
+
+.arrow-up::after {
+  border-bottom: 6px solid #000;
+}

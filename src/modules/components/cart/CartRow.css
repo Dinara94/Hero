@@ -1,0 +1,47 @@
+.CartRow {
+  box-sizing: border-box;
+  align-items: start;
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: 16% 42% 17% 17% 6%;
+  border: 1px solid;
+  border-color: transparent transparent #e4e4e4;
+  font-size: 0.7rem;
+  color: #9f9f9f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.CartRow__image {
+  max-height: 120px;
+}
+
+.CartRow__image img {
+  height: 100%;
+}
+
+.CartRow__info {
+  padding-left: 20px;
+}
+
+.CartRow__info .card__brand {
+  font-size: 0.7rem;
+  letter-spacing: 0px;
+}
+
+.CartRow__info .card__name {
+  margin: 7px 0;
+  font-size: 0.8rem;
+  color: #000;
+}
+
+.CartRow__price {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.CartRow__delete {
+  font-size: 1.2rem;
+  text-align: right;
+  color: #949494;
+}

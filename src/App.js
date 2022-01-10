@@ -1,36 +1,38 @@
-import React, { Component } from 'react';
-import { Link, Route } from 'react-router-dom';
-import logo from './logo.svg';
-import './App.css';
-import Category from './category/Category';
-import Cart from './cart/Cart';
-import Product from './product/Product';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
+import "./App.css";
+import Header from "./modules/components/common/Header/Header.js";
+import Categories from "./modules/components/category/Categories.js";
+import CartPage from "./modules/components/cart/CartPage.js";
+import ProductPage from "./modules/components/product/ProductPage.js";
+import ErrorScreen from "./modules/components/common/ErrorScreen/ErrorScreen.js";
+import { CartProvider } from "./modules/hooks/CartContext.js";
 
 const App = () => {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h1 className="App-title">Storefront Assignment</h1>
-            </header>
-            <p className="App-intro">
-                To get started, delete this header and introduction, and begin
-                building your app in the provided components.
-            </p>
-            <p className="App-intro">
-                We've setup the bare minimum you need to get started, but feel
-                free to add as many components as you see fit.
-            </p>
-
-            <header>
-                <Link to="/cart">My Cart</Link>
-            </header>
-
-            <Route exact path="/" component={Category} />
-            <Route path="/cart" component={Cart} />
-            <Route path="/product/:id" component={Product} />
-        </div>
-    );
+  return (
+    <div className="App">
+      <CartProvider>
+        <Router>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Categories} />
+            <Route path="/cart" component={CartPage} />
+            <Route exact path="/journal" component={ErrorScreen} />
+            <Route exact path="/more" component={ErrorScreen} />
+            <Route exact path="/:id" component={ProductPage} />
+            <Route path="*">
+              <Redirect to="/" />
+            </Route>
+          </Switch>
+        </Router>
+      </CartProvider>
+    </div>
+  );
 };
 
 export default App;

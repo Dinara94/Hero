@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories component and children Product component should change layout when hovered 1`] = `
+<figure
+  className="Product"
+>
+  <img
+    alt="Hand Painted Blue Flat Dish"
+    className="hovered"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    src="/media/hand-painted-blue-flat-dish.jpg"
+  />
+  <Link
+    className="Product__button details-btn"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    to="/22386980"
+  >
+    view details
+  </Link>
+  <button
+    className="Product__button add-btn"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    add to cart
+  </button>
+  <figcaption
+    className="Product__info"
+  >
+    <p
+      className="Product__brand"
+    >
+      Kiriko
+    </p>
+    <h3
+      className="Product__name"
+    >
+      Hand Painted Blue Flat Dish
+    </h3>
+    <p
+      className="Product__price"
+    >
+      $28.00
+    </p>
+  </figcaption>
+</figure>
+`;
+
+exports[`Categories component and children render Product component with props 1`] = `
+<figure
+  className="Product"
+>
+  <img
+    alt="Hand Painted Blue Flat Dish"
+    className={null}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    src="/media/hand-painted-blue-flat-dish.jpg"
+  />
+  <figcaption
+    className="Product__info"
+  >
+    <p
+      className="Product__brand"
+    >
+      Kiriko
+    </p>
+    <h3
+      className="Product__name"
+    >
+      Hand Painted Blue Flat Dish
+    </h3>
+    <p
+      className="Product__price"
+    >
+      $28.00
+    </p>
+  </figcaption>
+</figure>
+`;
+
+exports[`Product component render with props 1`] = `
+<figure
+  className="Product"
+>
+  <img
+    alt="Hand Painted Blue Flat Dish"
+    className={null}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    src="/media/hand-painted-blue-flat-dish.jpg"
+  />
+  <figcaption
+    className="Product__info"
+  >
+    <p
+      className="Product__brand"
+    >
+      Kiriko
+    </p>
+    <h3
+      className="Product__name"
+    >
+      Hand Painted Blue Flat Dish
+    </h3>
+    <p
+      className="Product__price"
+    >
+      $28.00
+    </p>
+  </figcaption>
+</figure>
+`;
+
+exports[`Product component should change layout when hovered 1`] = `
+<figure
+  className="Product"
+>
+  <img
+    alt="Hand Painted Blue Flat Dish"
+    className="hovered"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    src="/media/hand-painted-blue-flat-dish.jpg"
+  />
+  <Link
+    className="Product__button details-btn"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    to="/22386980"
+  >
+    view details
+  </Link>
+  <button
+    className="Product__button add-btn"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    add to cart
+  </button>
+  <figcaption
+    className="Product__info"
+  >
+    <p
+      className="Product__brand"
+    >
+      Kiriko
+    </p>
+    <h3
+      className="Product__name"
+    >
+      Hand Painted Blue Flat Dish
+    </h3>
+    <p
+      className="Product__price"
+    >
+      $28.00
+    </p>
+  </figcaption>
+</figure>
+`;

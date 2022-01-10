@@ -1,0 +1,45 @@
+.CartRowPopup {
+  box-sizing: border-box;
+  align-items: start;
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 20% 70% 10%;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+}
+
+.CartRowPopup__image {
+  max-height: 80px;
+}
+
+.CartRowPopup__image img {
+  height: 100%;
+}
+
+.CartRowPopup__info {
+  padding-left: 10px;
+}
+
+.CartRowPopup__info .card__brand {
+  margin: 7px 0;
+  color: #9f9f9f;
+  font-size: 0.5rem;
+}
+
+.CartRowPopup__info .card__name {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  line-height: 1.1rem;
+  align-self: flex-start;
+}
+
+.CartRowPopup .card__price {
+  font-size: 0.7rem;
+}
+
+.CartRowPopup__delete {
+  font-size: 0.8rem;
+  text-align: right;
+  color: #949494;
+}

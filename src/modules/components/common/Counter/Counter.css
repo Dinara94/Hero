@@ -1,0 +1,27 @@
+.counter {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-right: 10px;
+}
+
+.counter__controls {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 4px;
+  justify-content: space-between;
+  color: #949494;
+}
+
+.counter__controls button {
+  padding: 6px 8px;
+  background-color: #dadada;
+}
+
+.counter__value {
+  box-sizing: border-box;
+  padding: 20px 0;
+  width: 55px;
+  background-color: #eeeeee;
+  text-align: center;
+  font-size: 1.2rem;
+}
